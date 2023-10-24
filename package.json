@@ -2,9 +2,9 @@
   "name": "namaste-react",
   "version": "1.0.0",
   "description": "```\r const header = React.createElement(\r   \"div\",\r   {\r     className: \"Title\",\r     key: \"title\",\r   },\r   [\r     React.createElement(\r       \"h1\",\r       {\r         key: \"h1\",\r       },\r       \"This is h1 Tag\"\r     ),\r     React.createElement(\r         \"h2\",\r         {\r           key: \"h2\",\r         },\r         \"This is h2 Tag\"\r       ),\r       React.createElement(\r         \"h3\",\r         {\r           key: \"h3\",\r         },\r         \"This is h3 Tag\"\r       )\r   ]\r );\r ```",
-  "main": "App.js",
   "scripts": {
-    "start": "npx parcel index.html"
+    "start": "parcel index.html",
+    "build": "parcel build index.html"
   },
   "repository": {
     "type": "git",
@@ -19,13 +19,13 @@
   "dependencies": {
     "@reduxjs/toolkit": "^1.9.5",
     "d": "^1.0.1",
-    "parcel": "^2.8.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-redux": "^8.1.1",
     "react-router-dom": "^6.11.1"
   },
   "devDependencies": {
+    "parcel": "^2.10.1",
     "process": "^0.11.10",
     "tailwindcss": "^3.3.2"
   }
