@@ -1,5 +1,3 @@
-
-*.mdb
-Assigment 4/.parcel-cache
-Assigment 4/node_modules
-Assigment 4/dist
+.parcel-cache
+node_modules
+dist
