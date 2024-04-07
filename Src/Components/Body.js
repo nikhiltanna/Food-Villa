@@ -969,17 +969,15 @@ export const Body =()=>{
     const data= await fetch(
       "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4455331&lng=78.3606113&page_type=DESKTOP_WEB_LISTING");
     const json = await data.json();
-    
-
-    console.log(json)
+    console.log(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle?.restaurants)
     //We use optional chainging instead of this
-    setRestaurant(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants)
+    setRestaurant(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle.restaurants)
     
     console.log(restaurants)
-    setAllRestaurants(json?.data?.cards[2]?.card?.card?.gridElements?.infoWithStyle.restaurants)
+    setAllRestaurants(json?.data?.cards[4]?.card?.card?.gridElements?.infoWithStyle.restaurants)
   }
 
-  
+ // console.log(data?.cards[1]?.card?.card?.gridElements?.restaurants)
     return (allrestaurants.length == 0 )?
       <Shimmer/>
      : (
